@@ -1,4 +1,6 @@
-console.log("Thank you for visiting my site, fellow dev!");
+console.log("Thank you for visiting, my fellow web traverser. ^_^");
+console.log("My apologies, but my site is still under construction. It will be tidied up soon.");
+console.log("Please return for an update at a later time.");
 
 $(window).resize(function() {
     $('#header-content').height($(window).height());
@@ -6,7 +8,7 @@ $(window).resize(function() {
 
 $(window).trigger('resize');
 
-function headerText(arrOfText, id, arrOfColors){
+function headerText(arrOfText, id, arrOfColors){ //refactor needed - CBB
     if(arrOfColors === undefined){
         arrOfColors = ['#000'];
     }
@@ -54,4 +56,4 @@ function headerText(arrOfText, id, arrOfColors){
     }, 400);
 }
 
-headerText(["A software developer.", "A USAF veteran.", "A chess enthusiast."], "header-text");
+headerText(["A software developer.", "A USAF veteran.", "A chess enthusiast."], "header-text", ['blue', 'orangered', 'rebeccapurple', 'deeppink']);
