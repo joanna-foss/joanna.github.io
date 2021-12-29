@@ -22,7 +22,11 @@ a {
 }
 
 #header-content {
-    background-image: url("");
+    font-family: monospace, sans-serif;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 @media screen and (min-width: 300px) {
