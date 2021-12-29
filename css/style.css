@@ -19,9 +19,14 @@ a {
     top: 0px;
     right: 0px;
     text-align: center;
+    width: 5em;
 }
 
 #header-content {
+    font-family: monospace, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: monospace, sans-serif;
 }
 
@@ -38,14 +43,14 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-    div.header {
-        background-color: lightpink;
-        height: 100px;
-        width: auto;
-        color: beige;
-        font-size: 3em;
-        padding-bottom: .5em;
-    }
+    /*div.header {*/
+    /*    background-color: lightpink;*/
+    /*    height: 100px;*/
+    /*    width: auto;*/
+    /*    color: beige;*/
+    /*    font-size: 3em;*/
+    /*    padding-bottom: .5em;*/
+    /*}*/
 
 }
 
