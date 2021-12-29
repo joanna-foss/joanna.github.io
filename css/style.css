@@ -1,9 +1,3 @@
-body {
-    font-family: 'Oswald', sans-serif;
-    background-color: white;
-    color: black;
-}
-
 li {
     display: inline-block;
 }
@@ -22,36 +16,14 @@ a {
     width: 5em;
 }
 
-#header-content {
-    font-family: monospace, sans-serif;
-}
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: monospace, sans-serif;
+    font-family: monospace, serif;
 }
 
 .hidden {
     opacity: 0;
 }
 
-@media screen and (min-width: 300px) {
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 1024px) {
-    /*div.header {*/
-    /*    background-color: lightpink;*/
-    /*    height: 100px;*/
-    /*    width: auto;*/
-    /*    color: beige;*/
-    /*    font-size: 3em;*/
-    /*    padding-bottom: .5em;*/
-    /*}*/
-}
 
 .main_section {
     float: left;
@@ -64,4 +36,55 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     clear: both;
     padding: .5em;
+}
+
+@media screen and (min-width: 300px) {
+    #hello {
+        font-size: .5em;
+    }
+
+    #header-text {
+        font-family: monospace, serif;
+        font-size: 1em;
+    }
+
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: black;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+     #hello {
+        font-size: .75em;
+    }
+
+     #header-text {
+        font-family: monospace, serif;
+        font-size: 1.25em;
+    }
+
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: black;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+     #hello {
+        font-size: 1em;
+    }
+
+     #header-text {
+        font-family: monospace, serif;
+        font-size: 1.5em;
+    }
+
+    body {
+        font-family: 'Oswald', sans-serif;
+        color: black;
+        font-size: 1em;
+    }
 }

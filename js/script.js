@@ -56,4 +56,4 @@ function headerText(arrOfText, id, arrOfColors){ //refactor needed - CBB
     }, 400);
 }
 
-headerText(["A software developer.", "A USAF veteran.", "A chess enthusiast."], "header-text", ['blue', 'orangered', 'rebeccapurple', 'deeppink']);
+headerText(["software developer", "USAF veteran", "chess enthusiast"], "header-text", ['blue', 'orangered', 'rebeccapurple', 'deeppink']);
