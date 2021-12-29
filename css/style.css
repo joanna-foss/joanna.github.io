@@ -1,0 +1,59 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    background-color: white;
+    color: black;
+}
+
+#nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+}
+
+#header-content {
+    background-image: url("");
+}
+
+@media screen and (min-width: 300px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    div.header {
+        background-color: lightpink;
+        height: 100px;
+        width: auto;
+        color: beige;
+        font-size: 3em;
+        padding-bottom: .5em;
+    }
+
+}
+
+.main_section {
+    float: left;
+    margin: .4em;
+    border: solid 1px lightpink;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer {
+    clear: both;
+    padding: .5em;
+}
