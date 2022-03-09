@@ -1,5 +1,11 @@
+body {
+    background-color: beige;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+
 li {
-    display: inline-block;
+    list-style: none;
 }
 
 a {
@@ -7,21 +13,44 @@ a {
     color: black;
 }
 
-#nav {
-    position: fixed;
-    z-index: 1000;
-    top: 0px;
-    right: 0px;
-    text-align: center;
-    width: 5em;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: monospace, serif;
+    margin: 1em 0 .5em 0;
+}
+
+p {
+    margin: 5px 0px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    clear: both;
+    padding: .5em;
+}
+
+.full-shrink {
+    margin: 5px 0px;
+    max-width: 25em;
+    text-align: center;
+}
+
+.full-shrink > p {
+    margin-bottom: 2em;
+}
+
+.quote-block {
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 5px;
 }
 
 .hidden {
-    opacity: 0;
+    visibility: hidden;
 }
 
 
@@ -33,9 +62,43 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 1em;
 }
 
-footer {
-    clear: both;
-    padding: .5em;
+#nav {
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    width: 5em;
+}
+
+#me {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 20em;
+}
+
+#section1 > small {
+    margin: 5px 0px;
+    color: rgb(97, 97, 97);
+}
+
+#quote {
+    font-size: large;
+    margin: 5px;
+    border-radius: 5%;
+    border: black;
+    padding: 1em;
+    box-shadow: 3px 3px rgba(136, 136, 136, 0.3);
+}
+
+#quote:hover {
+    box-shadow: -3px -3px rgba(136, 136, 136, 0.3);
+}
+
+#quote:active {
+    background-color: black;
+    color: white;
 }
 
 @media screen and (min-width: 300px) {
@@ -49,8 +112,6 @@ footer {
     }
 
     body {
-        font-family: 'Oswald', sans-serif;
-        color: black;
         font-size: 1.25em;
     }
 }
@@ -66,9 +127,7 @@ footer {
     }
 
     body {
-        font-family: 'Oswald', sans-serif;
-        color: black;
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 }
 
@@ -83,8 +142,6 @@ footer {
     }
 
     body {
-        font-family: 'Oswald', sans-serif;
-        color: black;
         font-size: 1em;
     }
 }
