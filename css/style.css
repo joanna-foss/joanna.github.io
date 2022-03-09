@@ -46,7 +46,10 @@ footer {
 
 .quote-block {
     background-color: rgba(0, 0, 0, 0.082);
-    padding: 5px;
+    padding: 5px 10px 15px 10px;
+    margin: 5px;
+    border-radius: 5%;
+
 }
 
 .hidden {
