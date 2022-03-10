@@ -24,11 +24,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 h2 {
     font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
 }
 
 p {
@@ -114,7 +126,6 @@ footer div div i {
 }
 
 #quote {
-    font-size: 1.5em;
     margin: 5px;
     border-radius: 5%;
     border: black;
@@ -131,7 +142,7 @@ footer div div i {
     color: white;
 }
 
-@media screen and (min-width: 300px) {
+/* @media screen and (min-width: 300px) {
     #hello {
         font-size: .5em;
     }
@@ -167,4 +178,4 @@ footer div div i {
         font-family: monospace, serif;
         font-size: 1.5em;
     }
-}
+} */
