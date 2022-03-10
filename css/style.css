@@ -1,5 +1,5 @@
 body {
-    font-size: large;
+    font-size: x-large;
     background-color: beige;
     font-family: 'Oswald', sans-serif;
     color: black;
@@ -21,6 +21,14 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
     font-family: monospace, serif;
     margin: 1em 0 .5em 0;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.5em;
 }
 
 p {
@@ -101,8 +109,12 @@ footer div div i {
     color: rgb(97, 97, 97);
 }
 
+#interests-text {
+    font-size: 2em;
+}
+
 #quote {
-    font-size: large;
+    font-size: 1.5em;
     margin: 5px;
     border-radius: 5%;
     border: black;
@@ -127,6 +139,11 @@ footer div div i {
     #header-text {
         font-family: monospace, serif;
         font-size: 1em;
+    }
+
+    #section1 > img {
+        max-width: 90%;
+        height:auto;
     }
 }
 
