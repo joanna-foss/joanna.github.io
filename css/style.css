@@ -96,8 +96,8 @@ footer div div i {
     padding-bottom: 1em;
 }
 
-#underscore {
-    min-height:27.5px;
+#header-content h5 {
+    height: 27.5px;
 }
 
 #nav {
