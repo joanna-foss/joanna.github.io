@@ -96,6 +96,10 @@ footer div div i {
     padding-bottom: 1em;
 }
 
+#header-text {
+    min-height:27.5px;
+}
+
 #nav {
     position: fixed;
     z-index: 5;
