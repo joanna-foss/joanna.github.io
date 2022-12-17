@@ -1,9 +1,16 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
-    font-size: x-large;
-    background-color: beige;
+    font-size: large;
+    background-color: floralwhite;
     font-family: 'Oswald', sans-serif;
     color: black;
     /* width: 100vw; */
+    display:flex;
+    flex-direction:column;
+    margin:unset;
 }
 
 li {
@@ -20,7 +27,6 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: monospace, serif;
     margin: .5em 0 .5em 0;
 }
 
@@ -84,7 +90,38 @@ footer div div i {
 }
 
 .hidden {
-    display: none;
+    display:none;
+}
+
+.navbar-nav {
+    list-style-type:none;
+    padding:unset;
+}
+
+.navbar-nav li {
+    display:inline;
+    margin:unset;
+    padding:1em .5em;
+}
+
+.navbar-nav li:hover {
+    background-color:white;
+}
+
+.navbar-nav::before {
+    content: 'jo foss';
+    color: white;
+    text-transform: uppercase;
+    padding: 1em 1em;
+    background-color:maroon;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: medium;
+    text-transform: uppercase;
+    color: maroon;
 }
 
 
@@ -96,13 +133,26 @@ footer div div i {
     padding-bottom: 1em;
 }
 
+#header-content {
+    position:relative;
+}
+
+#header-video {
+    border:none;
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+}
+
 #nav {
-    position: fixed;
+    position: sticky;
     z-index: 5;
     top: 0px;
-    right: 0px;
-    text-align: center;
-    width: 5em;
+    left: 0px;
+    text-align: left;
+    width: 100%;
+    padding: .2em;
+    background: pink;
 }
 
 #me {
