@@ -4,7 +4,6 @@ html {
 
 body {
     font-size: large;
-    background-color: floralwhite;
     font-family: 'Oswald', sans-serif;
     color: black;
     /* width: 100vw; */
@@ -27,7 +26,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: .5em 0 .5em 0;
+    margin:.5em 0 .5em 0;
+    text-transform:uppercase;
 }
 
 h1 {
@@ -71,10 +71,15 @@ footer div div i {
     margin: .10em;
 }
 
+.black-divider {
+    background-color: black;
+    height:7px;
+    margin:-5px;
+}
+
 .full-shrink {
     margin: 5px 0px;
     max-width: 25em;
-    text-align: center;
 }
 
 .full-shrink > p {
@@ -124,7 +129,6 @@ footer div div i {
     color: white;
     text-transform: uppercase;
     padding: 1em 1em;
-    background-color:maroon;
 }
 
 .navbar-nav li a {
@@ -134,7 +138,6 @@ footer div div i {
     text-transform: uppercase;
     color: maroon;
 }
-
 
 .main_section {
     float: left;
@@ -167,24 +170,45 @@ footer div div i {
     text-align: left;
     width: 100%;
     padding: .2em;
-    background: pink;
+
+    background-color: rgb(0, 0, 0, 10%);
+    border-bottom: 1px solid rgb(0, 0, 0, 15%);
 }
 
 #me {
     margin: auto;
     border: 1px solid black;
-    border-radius: 50%;
+    border-radius: 10px;
     max-height: 20em;
     max-width: 100vw;
 }
 
+#section1 {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    margin:3em 0;
+}
+
+#section1>div {
+    display:flex;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+#section1>div:last-child {
+    flex-grow:1;
+}
+
 #section1 > img {
-    margin: 1em;
+    margin: .5em;
 }
 
 #section1 > small {
     font-style:oblique;
-    margin-bottom: 1em;
+    margin-top: 1em;
     color: rgb(97, 97, 97);
 }
 
@@ -239,8 +263,25 @@ footer div div i {
 } */
 
 @media screen and (max-width: 767px) {
+    .navbar-nav::before {
+        content: 'jo';
+        color: white;
+        text-transform: uppercase;
+        padding: 1em 1em;
+    }
+
+    .navbar-nav li {
+        padding:0.25em;
+    }
+
      .header-hello {
         font-size: 24px;
+     }
+
+     #section1 {
+        display:flex;
+        flex-direction:column;
+        padding:.5em;
      }
 }
 
